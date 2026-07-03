@@ -36,7 +36,7 @@ cmake --build build/ --target test_allocator && build/test_allocator
 
 - Конструкторы: без параметров; от одного числа; от числа и `const T&`; от одного аллокатора; от числа и аллокатора; от числа, `const T&` и аллокатора. **Если создается пустой лист, то не происходит никаких выделений динамической памяти**, независимо от того, на каком аллокаторе построен этот лист.
 - Метод `GetAllocator()`, возвращающий объект аллокатора, используемый в листе на данный момент;
-- Конструктор копирования, деструктор, копирующий оператор присваивания;
+- Конструктор копирования, деструктор, копирующий оператор присваивания, конструктор перемещения, мувающий оператор присваивания;
 - Метод `Size()`, работающий за $O(1)$, и `Empty()`;
 - Методы `PushBack`, `PushFront`, `PopBack`, `PopFront`;
 - Методы `EmplaceBack`, `EmplaceFront`, принимающие набор шаблонных аргументов;
@@ -59,5 +59,6 @@ cd cpp-projects && mkdir build
 cmake -S . -B build
 cmake --build build/ --target test_fuzzy && build/test_fuzzy
 cmake --build build/ --target test_list && build/test_list
+cmake --build build/ --target test_list_move && build/test_list_move
 cmake --build build/ --target test_benchmark && build/test_benchmark
 ```
