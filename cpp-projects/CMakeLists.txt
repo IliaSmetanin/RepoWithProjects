@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.11)
 
+# set(CMAKE_C_COMPILER "/usr/bin/gcc-14")
+# set(CMAKE_CXX_COMPILER "/usr/bin/g++-14")
+
+# set(CMAKE_CXX_COMPILER "/usr/bin/clang++-20")
+
 project(cpp-projects)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -27,3 +32,4 @@ add_subdirectory(deque)
 add_subdirectory(list)
 add_subdirectory(unordered-map)
 add_subdirectory(smart-pointers)
+add_subdirectory(tuple)
