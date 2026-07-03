@@ -1,0 +1,49 @@
+---
+Checks: '-*,cppcoreguidelines-avoid-goto,cppcoreguidelines-pro-type-const-cast, google-readability-casting, google-runtime-int, modernize-replace-random-shuffle, modernize-use-nullptr, readability-braces-around-statements, readability-container-size-empty, readability-redundant-control-flow, readability-redundant-string-init, readability-identifier-naming, google-build-using-namespace'
+HeaderFilterRegex: '\.(hpp|h)$'
+WarningsAsErrors: '*'
+CheckOptions:
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_case
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.TypedefCase
+    value: CamelCase
+  - key: readability-identifier-naming.TypeAliasCase
+    value: CamelCase
+  - key: readability-identifier-naming.PrivateMemberSuffix
+    value: '_'
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+  - key: readability-identifier-naming.FunctionCase
+    value: CamelCase
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.PrivateMemberCase
+    value: lower_case
+  - key: readability-identifier-naming.ParameterCase
+    value: lower_case
+  - key: readability-identifier-naming.GlobalConstantPrefix
+    value: k
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: CamelCase
+  - key: readability-identifier-naming.StaticConstantPrefix
+    value: k
+  - key: readability-identifier-naming.StaticConstantCase
+    value: CamelCase
+  - key: readability-identifier-naming.ConstexprVariableCase
+    value: CamelCase
+  - key: readability-identifier-naming.ConstexprVariablePrefix
+    value: k
+  - key: google-runtime-int.TypeSuffix
+    value: _t
+  - key: readability-identifier-naming.TypeTemplateParameterCase
+    value: CamelCase
+  - key: readability-identifier-naming.TypeTemplateParameterIgnoredRegexp
+    value: ^expr-type$
+  - key: readability-identifier-naming.StructIgnoredRegexp
+    value: ^(rebind)$
+  - key: readability-identifier-naming.FunctionIgnoredRegexp
+    value: ^((kdtree.*)|swap|begin|cbegin|rbegin|crbegin|end|cend|rend|crend|allocate|construct|destroy|deallocate|select_on_container_copy_construction)$
+  - key: readability-identifier-naming.TypeAliasIgnoredRegexp
+    value: ^(is_transparent|iterator_category|value_type|size_type|difference_type|pointer|const_pointer|reference|const_reference|iterator|const_iterator|reverse_iterator|const_reverse_iterator|iterator_type|iterator_concept|allocator_type|allocator_traits|other|propagate_on_container_copy_assignment|propagate_on_container_move_assignment|propagate_on_container_swap|is_always_equal|element_type|weak_type)$
