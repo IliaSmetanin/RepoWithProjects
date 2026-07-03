@@ -35,3 +35,14 @@
 Как и `List`, `UnorderedMap` является allocator-aware контейнером. Никаких прямых обращений к `new`/`delete` нет, всё происходит через `allocator_traits`. Во время конструирования и присваивания `UnorderedMap`'ов правильно использовуются свойства и методы аллокаторов `select_on_container_copy_construction`, `propagate_on_container_copy_assignment`, `propagate_on_container_move_assignment`, `propagate_on_container_swap`.
 
 Если аллокатор является структурой без каких-либо полей, то такой аллокатор не увеличивает `sizeof` объекта `UnorderedMap`. То есть тривиальный аллокатор как поле `UnorderedMap` занимает $0$ байт. То же самое распространяется и на объект `Hash`, и на объект `Equal`.
+
+### Запуск тестов
+
+осуществляется следующими командами:
+
+```bash
+cd cpp-projects && mkdir build
+cmake -S . -B build
+cmake --build build/ --target test_unordered && build/test_unordered
+cmake --build build/ --target test_performance && build/test_performance
+```
