@@ -22,3 +22,4 @@ FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(biginteger)
 add_subdirectory(rational)
+add_subdirectory(geometry)
