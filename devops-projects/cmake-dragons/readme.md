@@ -39,6 +39,7 @@
 
 ## Структура проекта
 
+```text
 cmake-dragons/
 ├── arena/              # тесты GoogleTest
 ├── cmake/              # CMake-модули (в т.ч. динамически загружаемый CodeCoverage.cmake)
@@ -47,6 +48,7 @@ cmake-dragons/
 ├── utils/              # хедер breath_power.hpp и includeLint.py
 ├── CMakeLists.txt      # главный сценарий сборки
 └── readme.md
+```
 
 ---
 

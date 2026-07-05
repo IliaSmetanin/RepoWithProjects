@@ -22,22 +22,24 @@
 
 ## Структура проекта
 
+```text
 docker-compose/
 ├── backend/
-│ ├── base.py # Подключение к БД, модель User
-│ ├── init_db.py # Создание таблиц и начальных данных
-│ ├── main.py # FastAPI приложение
-│ ├── requirements.txt # Зависимости Python
-│ └── templates/ # HTML-шаблоны
+│ ├── base.py            # Подключение к БД, модель User
+│ ├── init_db.py         # Создание таблиц и начальных данных
+│ ├── main.py            # FastAPI приложение
+│ ├── requirements.txt   # Зависимости Python
+│ └── templates/         # HTML-шаблоны
 ├── db/
-│ └── .db.env # Пароль PostgreSQL
+│ └── .db.env            # Пароль PostgreSQL
 ├─── docker/
 │ └── backend.Dockerfile # Сборка backend-образа
 ├── frontend/
-│ ├── nginx.conf # Конфигурация Nginx
-│ └── styles.css # Стили для веб-интерфейса
-├── docker-compose.yml # Описание сервисов
+│ ├── nginx.conf         # Конфигурация Nginx
+│ └── styles.css         # Стили для веб-интерфейса
+├── docker-compose.yml   # Описание сервисов
 └── readme.md
+```
 
 ---
 

@@ -20,22 +20,24 @@
 
 ## Структура проекта
 
+```text
 google-test-mock/
-├── cmake/ # CMake-модули
-├── examples / # Примеры использования тестируемых объектов
-├── src/ # Исходный код
-│ ├── 00-aplusb/ # Простая функция сложения
+├── cmake/               # CMake-модули
+├── examples /           # Примеры использования тестируемых объектов
+├── src/                 # Исходный код
+│ ├── 00-aplusb/         # Простая функция сложения
 │ ├── 01-simple-library/ # Функции работы с датами
-│ ├── 02-tree/ # Работа с файловой системой
-│ └── 03-weather/ # HTTP-запросы к AccuWeather API
-├── tests/ # Unit-тесты
+│ ├── 02-tree/           # Работа с файловой системой
+│ └── 03-weather/        # HTTP-запросы к AccuWeather API
+├── tests/               # Unit-тесты
 │ ├── 00-aplusb/
 │ ├── 01-simple-library/
 │ ├── 02-tree/
 │ └── 03-weather/
-├── include/ # заголовочные файлы
+├── include/             # заголовочные файлы
 ├── CMakeLists.txt
 └── readme.md
+```
 
 ---
 
