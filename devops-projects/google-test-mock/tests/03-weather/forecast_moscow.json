@@ -1,0 +1,184 @@
+{
+  "Headline": {
+    "EffectiveDate": "2026-04-09T07:00:00+03:00",
+    "EffectiveEpochDate": 1775707200,
+    "Severity": 4,
+    "Text": "A coating to 1 cm of snow, mixed with rain at times, Thursday morning through Thursday evening",
+    "Category": "snow/rain",
+    "EndDate": "2026-04-10T01:00:00+03:00",
+    "EndEpochDate": 1775772000,
+    "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?unit=c&lang=en-us"
+  },
+  "DailyForecasts": [
+    {
+      "Date": "2026-04-08T07:00:00+03:00",
+      "EpochDate": 1775620800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 1.3,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 5.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 13,
+        "IconPhrase": "Mostly cloudy w/ showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Night": {
+        "Icon": 12,
+        "IconPhrase": "Showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=1&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=1&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2026-04-09T07:00:00+03:00",
+      "EpochDate": 1775707200,
+      "Temperature": {
+        "Minimum": {
+          "Value": 0.8,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 3.3,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 29,
+        "IconPhrase": "Rain and snow",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Snow",
+        "PrecipitationIntensity": "Light"
+      },
+      "Night": {
+        "Icon": 29,
+        "IconPhrase": "Rain and snow",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=2&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=2&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2026-04-10T07:00:00+03:00",
+      "EpochDate": 1775793600,
+      "Temperature": {
+        "Minimum": {
+          "Value": 3.3,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 6.4,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 29,
+        "IconPhrase": "Rain and snow",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Mixed",
+        "PrecipitationIntensity": "Moderate"
+      },
+      "Night": {
+        "Icon": 36,
+        "IconPhrase": "Intermittent clouds",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=3&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=3&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2026-04-11T07:00:00+03:00",
+      "EpochDate": 1775880000,
+      "Temperature": {
+        "Minimum": {
+          "Value": 2.2,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 10.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 14,
+        "IconPhrase": "Partly sunny w/ showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Night": {
+        "Icon": 7,
+        "IconPhrase": "Cloudy",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=4&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=4&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2026-04-12T07:00:00+03:00",
+      "EpochDate": 1775966400,
+      "Temperature": {
+        "Minimum": {
+          "Value": 3.8,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 12.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 13,
+        "IconPhrase": "Mostly cloudy w/ showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Night": {
+        "Icon": 34,
+        "IconPhrase": "Mostly clear",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=5&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ru/moscow/294021/daily-weather-forecast/294021?day=5&unit=c&lang=en-us"
+    }
+  ]
+}

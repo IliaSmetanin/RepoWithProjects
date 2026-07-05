@@ -72,6 +72,7 @@ add_custom_target(
     COMMAND ${CMAKE_COMMAND} -E rm -f "${CMAKE_SOURCE_DIR}/coverage.info"
     COMMAND ${CMAKE_COMMAND} -E rm -f "${CMAKE_SOURCE_DIR}/coverage.info.cleaned"
     COMMAND ${CMAKE_COMMAND} -E rm -rf "${CMAKE_SOURCE_DIR}/results"
+    COMMAND ${CMAKE_COMMAND} -E rm -rf "${CMAKE_SOURCE_DIR}/drachenland/lib"
     
     COMMAND ${CMAKE_COMMAND} -E echo "Cleaning completed."
     COMMENT "Cleaning build directories, downloaded modules, coverage reports and results"

@@ -1,0 +1,25 @@
+[
+  {
+    "LocalObservationDateTime": "2026-04-09T22:42:00+03:00",
+    "EpochTime": 1775763720,
+    "WeatherText": "Mostly cloudy",
+    "WeatherIcon": 38,
+    "HasPrecipitation": false,
+    "PrecipitationType": null,
+    "IsDayTime": false,
+    "Temperature": {
+      "Metric": {
+        "Value": 0.0,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 32.0,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://www.accuweather.com/en/ru/moscow/294021/current-weather/294021?lang=en-us",
+    "Link": "http://www.accuweather.com/en/ru/moscow/294021/current-weather/294021?lang=en-us"
+  }
+]
