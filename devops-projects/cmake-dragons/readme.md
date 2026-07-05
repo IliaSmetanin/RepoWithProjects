@@ -45,7 +45,8 @@ cmake-dragons/
 ├── drachenland/        # основная библиотека драконов (fiery, icy, fury)
 ├── train/              # исходники для цели train (train.cpp, trench.cpp)
 ├── utils/              # хедер breath_power.hpp и includeLint.py
-└── CMakeLists.txt      # главный сценарий сборки
+├── CMakeLists.txt      # главный сценарий сборки
+└── readme.md
 
 ---
 

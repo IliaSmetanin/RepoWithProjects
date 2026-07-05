@@ -34,7 +34,8 @@ google-test-mock/
 │ ├── 02-tree/
 │ └── 03-weather/
 ├── include/ # заголовочные файлы
-└── CMakeLists.txt
+├── CMakeLists.txt
+└── readme.md
 
 ---
 

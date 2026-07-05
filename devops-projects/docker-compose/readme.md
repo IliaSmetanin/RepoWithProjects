@@ -36,7 +36,8 @@ docker-compose/
 ├── frontend/
 │ ├── nginx.conf # Конфигурация Nginx
 │ └── styles.css # Стили для веб-интерфейса
-└── docker-compose.yml # Описание сервисов
+├── docker-compose.yml # Описание сервисов
+└── readme.md
 
 ---
 

@@ -1,0 +1,80 @@
+image: ubuntu:24.04
+
+# env for cmake only
+variables:
+  GOOGLE_TEST_DIR: "googletest"
+
+stages:
+  - build
+  - test
+  - deliver
+
+cache:
+  paths:
+    # will be ignored if doesn't exist
+    - task-ci/3rdparty/googletest/
+
+# might be a hidden job
+before_script:
+  # apt cache will let job download packages faster
+  - apt update && apt install -y cmake g++ git
+  - cd task-ci/3rdparty
+  # --depth 1 - without commits' history
+  - if [ ! -d "googletest" ]; then git clone --depth 1 https://github.com/google/googletest.git googletest; fi
+  # Gitlab Runner defines the variable(depends on runner and how he executes the job)
+  - cd $CI_PROJECT_DIR
+
+BuildCode:
+  stage: build
+  tags:
+    - common
+  script:
+    - cd task-ci
+    - cmake -B build -S . -DCMAKE_INSTALL_PREFIX=$CI_PROJECT_DIR/task-ci && cmake --build build
+    - cd build && make install
+  artifacts:
+    paths:
+    # $CI_PROJECT_DIR - might be expanded wrong
+    # - $CI_PROJECT_DIR/exe/bin
+    # - $CI_PROJECT_DIR/exe/lib
+    - task-ci/exe/bin
+    - task-ci/exe/lib
+    # - task-ci/build/ # for tests
+    - task-ci/bin/ # for tests
+
+TestCode:
+  stage: test
+  tags:
+    - common
+  script:
+    # linker is searching only in LD_LIBRARY_PATH, and system paths
+    - cd task-ci && export LD_LIBRARY_PATH=$PWD/exe/lib:$LD_LIBRARY_PATH
+    # # --output-junit - special format that can be parsed by Gitlab to show in the interface
+    # - cd task-ci/build && ctest --output-on-failure --output-junit test-results.xml
+    - ./bin/CTestExe --gtest_output=xml:test-results.xml
+  dependencies:
+    - BuildCode
+  artifacts:
+    when: always # even if tests weren't passed
+    reports:
+      # junit: task-ci/build/test-results.xml
+      junit: task-ci/test-results.xml
+    paths:
+      # - task-ci/build/test-results.xml
+      - task-ci/test-results.xml
+
+DeliverCode:
+  stage: deliver
+  tags:
+    - common
+  script:
+    - mkdir -p task-ci/dist/exe
+    - cp -r task-ci/exe/bin/* task-ci/dist/exe
+    - cp -r task-ci/exe/lib/* task-ci/dist/exe
+  dependencies:
+    - BuildCode
+  artifacts:
+    paths:
+      - task-ci/dist/exe
+    expire_in: 1 week
+
