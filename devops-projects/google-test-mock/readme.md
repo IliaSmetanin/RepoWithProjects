@@ -20,7 +20,7 @@
 
 ## Структура проекта
 
-task-testing-cpp/
+google-test-mock/
 ├── cmake/ # CMake-модули
 ├── examples / # Примеры использования тестируемых объектов
 ├── src/ # Исходный код
